@@ -1,0 +1,350 @@
+/*inicio*/
+
+
+@esc-width-def: 1300px;
+
+@bg-size: contain;
+
+@media(min-width:1500px) and (max-width:2000px){
+    
+    body, html {width: @esc-width-def*1.35; height:@esc-width-def*1.35}
+    
+    header, footer {width:@esc-width-def*1.35; height: @esc-width-def*1.35*0.62*0.5;} // 
+    
+    main{width:@esc-width-def*1.35;height: percentage((@esc-width-def*0.34*1.35*1.1)/(@esc-width-def*1.35));margin: -2% 0 -0.5% 0} // 0.6 factor para disminuir el tamaño}
+    
+    .portada{
+        width: percentage((@esc-width-def*0.26*1.35)/(@esc-width-def*1.35)); // el 60% de la medida original
+        height: 90%; // aproximadamente el 60% de la medida original
+        margin: auto;
+         h1 {padding-top: 15%; font-size: 1.8em}
+         h2 {padding-top: 20%; font-size: 1.5em}
+         h3 {font-size: 1.5em}
+         form{font-size:1.6em}
+    }
+    
+    .paginas1{
+        width: percentage((@esc-width-def*0.26*2*1.35)/(@esc-width-def*1.35)); //anchura del libro X 2
+        height: 90%;
+        margin: 0 28%;
+        
+        h3{font-size: 2em; position:relative; top: 5%; left: 12% }
+        p:nth-child(even) {font-size: 1.5em; position:relative; top: 8%; left: 12%; width: 35%}
+        p:nth-child(odd) {font-size: 1.5em; position:relative; top: -75%; left: 55%; width: 35%}
+    }
+        .nav{
+        
+        position: relative;
+        top: 50%;
+        left:30%;
+        
+        font-size: 1.5em;
+        }
+    
+    
+}
+
+@media(min-width:1000px) and (max-width:1499px){
+    
+    body, html {width: @esc-width-def; height:@esc-width-def}
+    
+    header, footer {width:@esc-width-def; height: @esc-width-def*0.62*0.5;} // 
+    
+    main{width:@esc-width-def;height: percentage((@esc-width-def*0.34*0.9*1.1)/(@esc-width-def));margin: -2.5% 0 -0.5% 0} // 0.6 factor para disminuir el tamaño}
+    
+    .portada{
+        width: percentage((@esc-width-def*0.26*0.9)/@esc-width-def); // el 60% de la medida original
+        height: 90%; // aproximadamente el 60% de la medida original
+        margin: 0 auto;
+         h1 {padding-top: 15%; font-size: 1.8em}
+         h2 {padding-top: 20%; font-size: 1.5em}
+         h3 {font-size: 1.5em}
+          form{font-size:1.1em}
+    }
+    
+    .paginas1{
+        width: percentage((@esc-width-def*0.26*0.9*2)/@esc-width-def); //anchura del libro X 2
+        height: 90%;
+        margin: 0 30%;
+        h3{font-size: 1.5em; position:relative; top: 5%; left: 12% }
+        p:nth-child(even) {font-size: 1em; position:relative; top: 5%; left: 12%; width:35%}
+        p:nth-child(odd) {font-size: 1em; position:relative; top: -77%; left: 55%; width: 35%}
+    }
+    
+    .nav{
+        
+        position: relative;
+        top: 50%;
+        left:30%;
+        
+        font-size: 1.4em;
+        }
+    
+    
+    }
+@media(min-width:750px) and (max-width:999px){
+    
+    body, html{width: @esc-width-def*0.67; height: @esc-width-def*0.67} 
+    header, footer, {width:(@esc-width-def*0.67); height: @esc-width-def*0.67*0.61*0.5;} // sale de dividir 875px/1300px para el width
+    
+    main{width:@esc-width-def*0.67;height: percentage((@esc-width-def*0.34*0.8*1.1)/(@esc-width-def*0.67));margin: -3% 0 -0.5% 0} // 0.6 factor para disminuir el tamaño}
+    
+    .portada{
+        width: percentage((@esc-width-def*0.26*0.7)/(@esc-width-def*0.67)); // el 60% de la medida original
+        height: 90%; // aproximadamente el 60% de la medida original
+        margin: 0 auto;
+         h1 {padding-top: 10%; font-size: 1.5em}
+         h2 {padding-top: 15%; font-size: 1.1em}
+         h3 {font-size: 1.1em}
+         form{font-size:0.9em}
+    }
+    
+    .paginas1{
+        width: percentage((@esc-width-def*0.26*1.4)/(@esc-width-def*0.67)); //anchura del libro X 2
+        height: 90%;
+        margin: 0 28%;
+        h3{font-size: 1.3em; position:relative; top: 5%; left: 12% }
+        p:nth-child(even) {font-size: 0.8em; position:relative; top: 5%; left: 12%; width:35%}
+        p:nth-child(odd) {font-size: 0.8em; position:relative; top: -66%; left: 55%; width:35%}
+    }
+    
+       .nav{
+        
+        position: relative;
+        top: 50%;
+        left:30%;
+        
+        font-size: 1.2em;
+        }
+  
+    }
+
+
+@media(min-width:500px) and (max-width:749px){
+    
+    body, html {width: @esc-width-def*0.48; height: @esc-width-def*0.48} 
+    header, footer {width:(@esc-width-def*0.48); height: @esc-width-def*0.48*0.62*0.5;} // sale de dividir 625px/1300px para el width
+    
+    main{width:@esc-width-def*0.48; height: percentage((@esc-width-def*0.34*0.55*1.1)/(@esc-width-def*0.48));margin: -4% 0 -1% 0} // 0.6 factor para disminuir el tamaño
+    
+    .portada{
+        width: percentage((@esc-width-def*0.26*0.5)/(@esc-width-def*0.48)); // el 60% de la medida original
+        height: 90%; // aproximadamente el 60% de la medida original
+        margin: 0 auto;
+         h1 {padding-top: 5%; font-size: 1.4em}
+         h2 {padding-top: 10%; font-size: 1.1em}
+         h3 {font-size: 1.1em}
+         form{font-size:0.7em}
+       
+    }
+    
+    .paginas1{
+        width: percentage((@esc-width-def*0.26*1.1)/(@esc-width-def*0.48)); //anchura del libro X 2
+        height: 90%;
+        margin: 0 25%;
+        
+        h3{font-size: 1.1em; position:relative; top: 5%; left: 12% }
+        p:nth-child(even) {font-size: 0.6em; position:relative; top: 5%; left: 12%; width:35%}
+        p:nth-child(odd) {font-size: 0.6em; position:relative; top: -70%; left: 55%; width:35%}
+    }
+        .nav{
+        
+        position: relative;
+        top: 50%;
+        left:22%;
+        
+        font-size: 1em;
+        }
+}
+    
+    
+
+
+@media(min-width:200px) and (max-width:499px){
+    
+    body, html {width: @esc-width-def*0.27; height: @esc-width-def*0.27} 
+    header, footer, {width:(@esc-width-def*0.27); height: @esc-width-def*0.27*0.62*0.5;} // sale de dividir 625px/1300px para el width
+    
+    main{width:@esc-width-def*0.27; height: percentage((@esc-width-def*0.34*0.35*1.1)/(@esc-width-def*0.27));margin: -6% 0 -1% 0}
+    
+    .portada{
+        width: percentage((@esc-width-def*0.26*0.35)/(@esc-width-def*0.27)); // el 60% de la medida original
+        height: 90%;
+        margin: 0 auto;
+         h1 {padding-top: 5%; font-size: 1.4em}
+         h2 {padding-top: 10%; font-size: 1.1em}
+         h3 {font-size: 1.1em}
+         form{font-size:0.5em}
+    }
+    
+    
+    .paginas1{
+        width: percentage((@esc-width-def*0.26*0.7)/(@esc-width-def*0.27)); //anchura del libro X 2
+        height: 90%;
+        margin: 0 21%;
+        h3{font-size: 0.9em; position:relative; top: 5%; left: 12% }
+        p:nth-child(even) {font-size: 0.4em; position:relative; top: 1%; left: 12%; width:35%}
+        p:nth-child(odd) {font-size: 0.4em; position:relative; top: -80%; left: 55%; width:35%}
+    
+    }
+    .nav{
+        
+        position: relative;
+        top: 50%;
+        left:10%;
+        
+        font-size: 0.5em
+    }
+    
+}
+    
+   
+
+
+
+  
+    header{
+             background: url("/escritorio-parte-superior.jpg") no-repeat;
+             background-size: @bg-size;
+             background-position: top;
+             z-index: 2;
+            
+        }
+        
+        
+    main {
+        background: url("/escritorio-parte-media.jpg") repeat-y;
+        background-size: contain;
+        z-index: 1;
+        
+    }
+    
+        
+    footer{
+            background: url("/escritorio-parte-inferior.jpg") no-repeat;
+            background-size: @bg-size;
+            background-position: bottom;
+            z-index: 2
+             
+    }
+    
+
+    
+    .portada-estetica{
+
+            background: url("/libro-rojo-cubierta.jpg") repeat-y;
+            background-size: cover;
+                         
+        
+            h1{font-family: 'Lobster', cursive;
+                    
+                    
+                    color: #fae596;
+                    text-align: center;
+                    text-decoration: underline;
+            }
+                    
+            
+            h2{font-family: 'Lobster', cursive;
+                    
+                    
+                    color: #fae596;
+                    text-align: center;
+                    text-decoration: underline;
+                    
+            }
+        }
+        
+            
+    
+    
+    .paginas {
+        
+   
+        background: url('/libro-abierto.jpg') no-repeat;
+        background-size:@bg-size;
+        iframe{
+                width: 35%;
+                height: 80%;
+                position: relative;
+                left: 12%;
+                top: 5%;
+                display: block
+        }
+
+    }
+        
+    .contraportada{
+        background: url("/libro-rojo-contraportada.jpg") repeat-y;
+        background-size: cover;
+        label, h3{font-family: 'Lobster', cursive;
+            color: #C0C0C0;
+            
+        }
+        form{
+            position: relative;
+            top: 2%;
+            left: 2%;
+        }
+    }        
+    
+    .nav{
+        
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .nav-pills li > a{color: #006400}
+    
+    
+    .oculto{visibility: hidden; width: 0px ;height: 0px; float: left}
+        
+        
+        
+   /*Desde aca comienzan las transiciones*/
+        
+        @keyframes delibroapaginas{
+            
+            0%{background:  url("/libro-rojo-cubierta.jpg")  no-repeat; background-size: contain; background-position: center}
+            25%{background:  url("/libro-abriendose-1.jpg") no-repeat; background-size: contain;background-position: center}
+            50%{background:  url("/libro-abriendose-2.jpg") no-repeat; background-size: contain;background-position: center}
+            75%{background:  url("/libro-abriendose-3.jpg") no-repeat; background-size: contain;background-position: center}
+            100%{background:  url("/libro-abierto.jpg") no-repeat; background-size: contain; background-position: center}
+            
+        }
+        
+        
+        @keyframes entrepaginas{
+            
+             0%{background:  url("/libro-abierto.jpg")  no-repeat; background-size: contain;background-position: center}
+            25%{background:  url("/pagina moviendose.jpg")  no-repeat;  background-size: contain; background-position: center}
+            50%{background:  url("/pagina moviendose2.jpg")  no-repeat; background-size: contain; background-position: center}
+            75%{background:  url("/pagina moviendose3.jpg")  no-repeat; background-size: contain; background-position: center}
+            100%{background:  url("/libro-abierto.jpg")  no-repeat;  background-size: contain; background-position: center}
+            
+            
+        }
+        
+        @keyframes delibroapaginas2 {
+            
+             0%{background:  url("/libro-rojo-contraportada.jpg")  no-repeat; background-size: contain; background-position: center}
+            25%{background:  url("/libro-abriendose-1-reverse.jpg") no-repeat; background-size: contain;background-position: center}
+            50%{background:  url("/libro-abriendose-2-reverse.jpg") no-repeat; background-size: contain;background-position: center}
+            75%{background:  url("/libro-abriendose-3-reverse.jpg") no-repeat; background-size: contain;background-position: center}
+            100%{background:  url("/libro-abierto.jpg") no-repeat; background-size: contain;}
+            
+        }
+        
+        
+      
+.abrirlibroadelante{animation: 1s normal delibroapaginas;}
+
+.avanzar{animation: 1s normal entrepaginas;}
+
+.retroceder{animation: 1s reverse entrepaginas;}
+
+.cerrarlibroatras{animation: 1s reverse delibroapaginas2;}
+
+.abrirlibroatras{animation: 1s normal delibroapaginas2;}
+
+.cerrarlibroadelante{animation: 1s reverse delibroapaginas;}

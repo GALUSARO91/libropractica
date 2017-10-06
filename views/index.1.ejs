@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="es">
+    <meta name="author" content="Luis Rodriguez">
+    <meta name="description" content="Mi portal sobre desarollo web">
+    <meta name="keywords" content="Desarrollo web, HTM, CSS, JavaScript, Bases de datos, Managua, Nicaragua">
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <title>!**Diseño de paginas web**¡</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   <script src="./jquery.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="/inicio.less"/>
+    <script src="/less.js" type="text/javascript"></script>
+    <script src="/libro.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+        <header>
+            <ul class="nav nav-pills">
+                <li role="presentation"><a href="#inicio">Inicio</a></li> 
+                <li role="presentation"><a href="#acerca_de">Acerca de mi</a></li>
+                <li role="presentation"><a href="#portafolio_1">Pagina 1</a></li>
+                <li role="presentation"><a href="#contacto">Contactame</a></li>
+                    
+            </ul>
+
+        </header>
+    
+    <main>
+       <section class="portada portada-estetica" id="inicio">
+            <h1> Luis Gabriel Rodriguez Sandino</h1>
+            <h2> Desarrollador Web</h2>
+            
+       </section>
+    <section class="oculto" id="acerca_de">
+        <h3> Acerca de mi</h3>
+        <p> 
+        Soy un ingeniero industrial nacido y 
+        residente en nicaragua, el cual 
+        le gusta mucho programar. 
+        Comence como muchos otros al recibir 
+        su primera computadora, en mi caso 
+        era de segunda, pero eso me abrió 
+        el camino para seguir intentando.
+        <br>
+        He tomado un par de cursos pero 
+        mayormente he sido autodidacta.
+        Motivado siempre por el afan de 
+        aprender más ya que concidero 
+        a la programación en sus diferentes 
+        facetas como parte importante
+        del desarrollo de las tecnologias
+        del futuro.
+        
+        
+        </p>
+        
+        <p> 
+        Una de las cosas que mas quisiera hacer es diseñar sistemas web en
+        distintas plataformas (PC, moviles) que ayuden a las personas y a
+        las empresas a facilitar el trabajo. Tambien me gustaria ser parte
+        de proyectos multimedia (animacion, videojuegos, peliculas, etc).
+        <br>
+        Espero algun dia poder ser un referente a nivel nacional del desarrollo
+        de esta clase de tecnologias.
+        </p>
+    </section>
+    <section class="oculto" id="portafolio_1" >
+        
+        <h3>Portafolio</h3>
+        
+        <iframe src="https://rebeccas-fashion270317.herokuapp.com/"></iframe>
+        <p>
+            Esta es una pagina web diseñada por mi.
+            La cual continene una interfaz bastante
+            basica, lo resaltante de esta es que 
+            posee un modulo especializado para subir
+            y editar contenidos de la pagina web.
+            Esta enlazada a una base de datos en linea,
+            lo cual es muy conveniente ya que los
+            datos se mantiene ahi sin importar
+            desde donde o en que condiciones se
+            accese a ella.
+            
+            
+            
+            <a href="http://rebeccas-fashion.tk/">Ir a pagina web</a>
+        
+        </p>
+        
+    </section>
+    <section class="oculto" id="contacto">
+        <h3>Contactame</h3>
+        <form action="/correo" method="post">
+            <label>Tu nombre<input type="text" name="Mi_nombre" placeholder="Introduzca su nombre" autofocus required></label>
+            <label>Tu correo electronico <input type="email" name="Mi_correo" placeholder="Introduzca su(s) correo(s) electronicos(s)" multiple required></label>
+            <label>Asunto <input type="text" name="Asunto" placeholder="Introduzca el asunto"></label>
+            <textarea name="mensaje" placeholder="Escriba mensaje aqui!!!" required></textarea>
+            <input type="submit" value="submit"></submit>
+        </form>
+    </section>
+    </main>
+<footer>
+    <!--<p class="footer">Creado <time>25/04/17</time></p>-->
+</footer>
+
+
+
+</body>
+</html>
