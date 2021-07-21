@@ -94,8 +94,13 @@
     </section>
     <section class="oculto" id="contacto">
         <h3>Contactame</h3>
-            <p>Telefono:<tel>8472-8238</tel></p>
-            <p>Email:<email>glsr91@hotmail.com</email></p>
+        <form action="/correo" method="post">
+            <label>Tu nombre<input type="text" name="Mi_nombre" placeholder="Introduzca su nombre" autofocus required></label>
+            <label>Tu correo electronico <input type="email" name="Mi_correo" placeholder="Introduzca su(s) correo(s) electronicos(s)" multiple required></label>
+            <label>Asunto <input type="text" name="Asunto" placeholder="Introduzca el asunto"></label>
+            <textarea name="mensaje" placeholder="Escriba mensaje aqui!!!" required></textarea>
+            <input type="submit" value="submit"></submit>
+        </form>
     </section>
     </main>
 <footer>

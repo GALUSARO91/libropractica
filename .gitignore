@@ -1,0 +1,6 @@
+/mailserver
+/node_modules
+*.komodoproject
+*.png
+*.jpg
+/.c9
